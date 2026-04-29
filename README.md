@@ -1,5 +1,9 @@
 # Intelligent-Support-Ticket-Classification-with-RAG-DEPI
 
+![Intelligent-Support-Ticket-Classification](assets/header.png)
+
+
+
 ## Project Overview
 This project builds an AI-powered support system that:
 - Classifies support tickets (priority, type, queue)
