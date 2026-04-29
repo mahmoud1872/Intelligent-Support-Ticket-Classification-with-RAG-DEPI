@@ -1,28 +1,40 @@
 # Literature Review
 
-## Support Ticket Classification
-Traditional NLP systems rely on TF-IDF and classical ML models such as SVM and Random Forest for text classification.
+## RAG (Retrieval-Augmented Generation)
 
----
-
-## Transformer-Based NLP
-Sentence-BERT (SBERT) provides dense embeddings that capture semantic meaning better than TF-IDF.
-
----
-
-## Retrieval-Augmented Generation (RAG)
 RAG combines:
-- Retrieval (FAISS / vector DB)
-- Generation (LLMs)
+- Information Retrieval
+- Large Language Models
 
-This reduces hallucination and improves factual accuracy.
-
----
-
-## Vector Databases
-FAISS enables fast similarity search over high-dimensional embeddings.
+It improves response accuracy by using external knowledge before generation.
 
 ---
 
-## LLM Integration
-Large Language Models generate contextual responses based on retrieved knowledge.
+## Why RAG?
+- Reduces hallucination
+- Uses real data from past tickets
+- Improves contextual understanding
+
+---
+
+## Key Concepts
+
+### 1. TF-IDF
+Traditional text representation method using word frequency.
+
+### 2. Embeddings (SBERT)
+Transforms text into dense semantic vectors.
+
+### 3. Vector Search (FAISS)
+Efficient similarity search in high-dimensional space.
+
+---
+
+## Traditional vs RAG
+- Traditional: TF-IDF + ML classifier
+- RAG: Embeddings + Retrieval + LLM generation
+
+RAG performs better in:
+- Context understanding
+- Response quality
+- Adaptability
