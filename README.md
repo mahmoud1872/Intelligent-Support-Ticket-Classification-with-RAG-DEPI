@@ -1,40 +1,59 @@
 # Intelligent-Support-Ticket-Classification-with-RAG-DEPI
 
 ## Project Overview
-This project builds an intelligent customer support system that:
-- Classifies support tickets (Priority, Type, Queue)
-- Retrieves similar historical tickets using semantic search (FAISS + SBERT)
-- Generates automated responses using a Retrieval-Augmented Generation (RAG) pipeline with Groq Llama 3.3 70B
+This project builds an AI-powered support system that:
+- Classifies support tickets (priority, type, queue)
+- Retrieves similar past tickets using vector search
+- Generates intelligent responses using RAG (Retrieval-Augmented Generation)
+
+It simulates real-world ML Engineering systems combining NLP, embeddings, and LLMs.
 
 ---
 
 ## Pipeline Architecture
 
-Ticket → TF-IDF / SBERT → Classification + Retrieval → FAISS → LLM (Groq / Ollama) → Response
+Ticket Text  
+→ TF-IDF / ML Classifier  
+→ SBERT Embeddings  
+→ FAISS Vector Search  
+→ Top Similar Tickets  
+→ Groq LLM (Llama 3.3 70B)  
+→ Generated Response  
 
 ---
 
-## Tech Stack
-- Python
-- Scikit-learn
-- Sentence Transformers (SBERT)
-- FAISS
-- Groq API (Llama 3.3 70B)
-- NLTK
-- Pandas / NumPy
-
----
-
-## Key Features
-- Multi-output ticket classification
-- Semantic search using embeddings
+## Features
+- Multi-label classification (Priority / Type / Queue)
+- Semantic search using SBERT embeddings
+- FAISS vector database for retrieval
 - RAG-based response generation
-- Traditional vs Transformer comparison
-- BLEU + Accuracy evaluation
+- Traditional vs RAG comparison
+
+---
+
+## Models Used
+- TF-IDF (bigrams)
+- Random Forest / SVM / Logistic Regression
+- Sentence-BERT (all-MiniLM-L6-v2)
+- FAISS
+- Groq LLM API (Llama 3.3 70B)
 
 ---
 
 ## How to Run
-```bash
-pip install -r requirements.txt
-python src/main.py
+1. Open the notebook in Google Colab
+2. Install dependencies
+3. Run all cells step-by-step
+
+---
+
+## Evaluation Metrics
+- Accuracy (Classification)
+- F1 Score
+- Precision@K (Retrieval)
+- BLEU Score (Response quality)
+
+---
+
+## Tech Stack
+Python, Scikit-learn, SBERT, FAISS, Groq API, NLTK
