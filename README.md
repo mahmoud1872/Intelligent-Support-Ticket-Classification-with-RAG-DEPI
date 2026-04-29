@@ -1,7 +1,5 @@
 # Intelligent-Support-Ticket-Classification-with-RAG-DEPI
 
-# Intelligent Support Ticket Classification with RAG
-
 ## Project Overview
 This project builds an intelligent customer support system that:
 - Classifies support tickets (Priority, Type, Queue)
