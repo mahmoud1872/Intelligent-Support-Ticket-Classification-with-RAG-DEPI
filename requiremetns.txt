@@ -1,0 +1,9 @@
+numpy
+pandas
+scikit-learn
+imbalanced-learn
+sentence-transformers
+faiss-cpu
+groq
+ollama
+nltk
