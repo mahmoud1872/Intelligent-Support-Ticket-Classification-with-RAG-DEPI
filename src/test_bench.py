@@ -35,11 +35,11 @@ def run_test_suite():
         
         rag_out = rag_pipeline.generate_rag_response(text, index, embedder, kb_data, top_k=3)
         
-        print(f"\n📥 INCOMING TICKET: \"{text[:100]}...\"")
-        print(f"🚨 Predicted Priority : {pred_p.upper()}")
-        print(f"📁 Predicted Issue Type: {pred_t}")
-        print(f"🎯 Assigned Department : {pred_q}")
-        print(f"🤖 Output ({rag_out['backend']}): {rag_out['response']}\n" + "="*60)
+        print(f"\n INCOMING TICKET: \"{text[:100]}...\"")
+        print(f" Predicted Priority : {pred_p.upper()}")
+        print(f" Predicted Issue Type: {pred_t}")
+        print(f" Assigned Department : {pred_q}")
+        print(f" Output ({rag_out['backend']}): {rag_out['response']}\n" + "="*60)
 
     # Execution Validation Samples
     process_ticket("Centralized account management portal is completely offline. Bypassing my login credential prompts.")
